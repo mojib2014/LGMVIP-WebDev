@@ -5,6 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zippy</title>
+    <meta
+      name="description"
+      content="Zippy is a static web page design, built with (LETSGROWMORE)"
+    />
+    <meta
+      name="keywords"
+      content="webdesign, web development, UX, UI, iPhone apps, iPad apps"
+    />
+    <meta name="author" content="Mojib Mohammad" />
+
+    <!-- Linkedin Metadata -->
+    <meta property="og:title" content="Zippy" />
+    <meta property="og:type" content="Zippy WebDev" />
+    <meta property="og:image" content="assets/images/zippy-web-page.png" />
+    <meta property="og:description" content="Web Design" />
+
     <!-- Font awesome -->
     <link
       rel="stylesheet"
@@ -13,25 +29,28 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+
     <!-- JavaScript -->
     <script src="assets/js/index.js" defer></script>
+    <script
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCctaqWBPKV8wP-GIT0zkkSS-P8bVRHqmI&callback=initMap"
+    ></script>
   </head>
+
   <body onload="initMap()">
     <!-- Main Header (Topnav) -->
     <header id="header" class="header">
       <div class="content">
         <nav id="desktop" class="topnav">
-          <a
-            class="logo"
-            href="/index.html"
-            aria-label="logo"
-            title="Brand Logo"
+          <a class="logo" href="index.html" aria-label="logo" title="Brand Logo"
             >zippy</a
           >
           <ul>
-            <li><a href="/index.html" class="current">home</a></li>
+            <li><a href="index.html" class="current">home</a></li>
             <li><a href="#projects">projects</a></li>
             <li><a href="#pricing">pricing</a></li>
             <li><a href="#team">team</a></li>
@@ -41,7 +60,7 @@
         </nav>
         <nav id="mobile" class="mobile-menu">
           <ul>
-            <li><a href="/index.html" class="current">home</a></li>
+            <li><a href="index.html" class="current">home</a></li>
             <li><a href="#projects">projects</a></li>
             <li><a href="#pricing">pricing</a></li>
             <li><a href="#team">team</a></li>
@@ -990,9 +1009,7 @@
       <!-- Map and Contact Section -->
       <section id="contact" class="map-and-contact">
         <div class="flex-container">
-          <div class="flex-item">
-            <div id="googleMap" style="height: 100%; width: 100%"></div>
-          </div>
+          <div id="googleMap" class="flex-item"></div>
           <div class="flex-item bg-yellow">
             <form action="">
               <div class="contact-wrapper">
@@ -1008,10 +1025,6 @@
                 <div class="form-group">
                   <label for="subject">SUBJECT</label>
                   <input type="text" name="subject" id="subject" required />
-                </div>
-                <div class="form-group">
-                  <label for="message">MESSAGE</label>
-                  <input type="text" name="message" id="message" />
                 </div>
                 <div class="form-group">
                   <label for="message">MESSAGE</label>
@@ -1091,9 +1104,5 @@
         </div>
       </footer>
     </main>
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCctaqWBPKV8wP-GIT0zkkSS-P8bVRHqmI&callback=initMap"
-      async
-    ></script>
   </body>
 </html>
