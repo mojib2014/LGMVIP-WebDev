@@ -66,19 +66,17 @@ playBtns.forEach((playBtn) => {
     if (videoElement.paused) {
       videoElement.play();
       playBtn.innerText = "||";
+      videoElement.setAttribute("controls", true);
     } else {
       videoElement.pause();
       playBtn.innerText = "►";
       playBtn.style.display = "block";
+      videoElement.removeAttribute("controls");
     }
   });
 });
 
-// Slide previou and next
-previousBtn.addEventListener("click", () => {
-  const images = document.querySelectorAll(".images-flexbox img");
-});
-
+// Initialize google map
 let map;
 
 function initMap() {

@@ -30,6 +30,7 @@ html {
   -moz-box-sizing: border-box;
   font-size: 100%;
   scroll-behavior: smooth;
+  scroll-padding-top: 45px; /* height of sticky header */
 }
 
 body {
@@ -355,9 +356,14 @@ section h2 {
 /***********
     Pricing Table Section
 **********/
+.pricing .flex-container {
+  align-items: center;
+}
+
 .devider {
   flex-basis: 2px;
   background-color: #eaeaea;
+  min-height: 200px;
 }
 
 @media (max-width: 800px) {
@@ -376,7 +382,7 @@ section h2 {
   align-items: center;
   flex-wrap: nowrap;
   justify-content: center;
-  overflow-x: hidden;
+  overflow-x: auto;
 }
 
 .video-projects-wrapper {
@@ -385,7 +391,13 @@ section h2 {
 
 .video-projects-wrapper .flex-item {
   position: relative;
-  margin-left: 1rem;
+  flex-basis: 30%;
+  min-width: 30%;
+  margin: 0 1.5rem;
+}
+
+.video-projects-wrapper video {
+  width: 100%;
 }
 
 #video-play-btn {
@@ -411,10 +423,7 @@ section h2 {
   background: transparent;
   border: none;
   color: #fff;
-  margin-right: 0.5rem;
-}
-
-@media (max-width: 800px) {
+  margin-right: 2rem;
 }
 
 /*************
