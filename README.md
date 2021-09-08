@@ -1,4 +1,4 @@
-# [Zippy](mojib2014.github.io/lgmvip-webdev/)
+# [Zippy](https://mojib2014.github.io/LGMVIP-WebDev/)
 
 Zippy is a static web design built as a project for internship at LETSGROWMORE based on bellow design sketch.
 
