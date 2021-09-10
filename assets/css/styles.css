@@ -83,7 +83,7 @@ label {
 }
 
 .content {
-  width: 70%;
+  width: 60%;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -129,14 +129,14 @@ section {
 section h2 {
   text-align: center;
   font-size: 2rem;
-  padding: 1.5rem 0;
+  padding-bottom: 1.5rem;
 }
 
 .horizontal-line {
   width: 100%;
-  height: 1.5px;
+  height: 2px;
   background-color: #eaeaea;
-  margin: var(--spacing);
+  margin-top: 1.5rem;
 }
 
 .previous,
@@ -231,12 +231,8 @@ header ul {
   color: #fff;
 }
 
-.topnav a.active {
-  border-bottom: 3px solid dodgerblue;
-}
-
-.mobile-menu a.active {
-  border-left: 3px solid dodgerblue;
+.header a.active {
+  color: var(--yellow);
 }
 
 .mobile-menu a:hover {
@@ -351,11 +347,13 @@ header ul {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 5%;
+  bottom: 2%;
   width: 70%;
   max-width: 1200px;
   margin: 0 auto;
   padding: var(--spacing);
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .dot {
@@ -375,6 +373,9 @@ header ul {
 }
 
 @media (max-width: 800px) {
+  .banner .content {
+    width: 100%;
+  }
   .banner img {
     height: 100vh;
   }
@@ -441,6 +442,11 @@ header ul {
   justify-content: center;
 }
 
+.card {
+  flex-basis: 25%;
+  width: 25%;
+}
+
 @media (max-width: 800px) {
   .projects .flex-item {
     flex-basis: 100%;
@@ -487,9 +493,9 @@ header ul {
 .video-projects-wrapper .flex-item {
   display: none;
   position: relative;
-  flex-basis: 35%;
-  min-width: 35%;
-  margin: 0 1.5rem;
+  flex-basis: 46%;
+  min-width: 46%;
+  margin: 0 1rem;
 }
 
 .video-projects-wrapper video {
@@ -508,11 +514,17 @@ header ul {
   transform: translate(-50%, -50%);
 }
 
-.carousel-controls .content {
+.video-projects-wrapper .content {
   align-items: center;
   display: flex;
   justify-content: space-between;
 }
+
+/* .previous,
+.next {
+  margin-left: 4.5rem;
+  margin-right: auto;
+} */
 
 .previous button,
 .next button {
@@ -520,7 +532,7 @@ header ul {
   border: none;
   color: #fff;
   cursor: pointer;
-  margin-right: 2rem;
+  margin-right: 3rem;
 }
 
 .slide-in-from-right {
@@ -669,8 +681,27 @@ header ul {
   color: #fff;
 }
 
+#subscription .content {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#subscription form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 70%;
+  margin: 0 auto;
+}
+
 #subscription .form-group {
-  text-align: right;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-basis: 100%;
+  width: 100%;
 }
 
 #subscription input[type="email"] {
@@ -679,7 +710,7 @@ header ul {
   border-top-right-radius: none;
   border-bottom-right-radius: none;
   padding: 0.7rem 0.8rem;
-  width: 50%;
+  width: 75%;
 }
 
 input[type="submit"] {
@@ -691,13 +722,12 @@ input[type="submit"] {
   padding: 0.7rem 0.8rem;
   margin-left: -6.99px;
   text-transform: uppercase;
-  width: auto;
+  width: 25%;
 }
 
 button[type="submit"] {
   border-radius: 4px;
   display: block;
-  float: right;
   margin: 1rem 0;
   padding: 0.5rem 1.5rem;
   text-transform: uppercase;
@@ -705,6 +735,16 @@ button[type="submit"] {
 
 #subscription .bg-purple {
   align-self: flex-end;
+}
+
+@media (max-width: 800px) {
+  #subscription form {
+    width: 100%;
+  }
+
+  #subscription .content {
+    width: 100%;
+  }
 }
 
 /************
