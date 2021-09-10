@@ -50,24 +50,29 @@
             >zippy</a
           >
           <ul>
-            <li><a href="index.html" class="current">home</a></li>
-            <li><a href="#projects">projects</a></li>
-            <li><a href="#pricing">pricing</a></li>
-            <li><a href="#team">team</a></li>
-            <li><a href="#blog">blog</a></li>
-            <li><a href="#contact">contact</a></li>
+            <li><a class="nav-item active" href="index.html">home</a></li>
+            <li><a class="nav-item" href="#projects">projects</a></li>
+            <li><a class="nav-item" href="#pricing">pricing</a></li>
+            <li><a class="nav-item" href="#team">team</a></li>
+            <li><a class="nav-item" href="#blog">blog</a></li>
+            <li><a class="nav-item" href="#contact">contact</a></li>
           </ul>
         </nav>
-        <nav id="mobile" class="mobile-menu">
-          <ul>
-            <li><a href="index.html" class="current">home</a></li>
-            <li><a href="#projects">projects</a></li>
-            <li><a href="#pricing">pricing</a></li>
-            <li><a href="#team">team</a></li>
-            <li><a href="#blog">blog</a></li>
-            <li><a href="#contact">contact</a></li>
-          </ul>
-        </nav>
+      </div>
+      <nav id="mobile" class="mobile-menu">
+        <ul>
+          <li><a class="nav-item active" href="index.html">home</a></li>
+          <li><a class="nav-item" href="#projects">projects</a></li>
+          <li><a class="nav-item" href="#pricing">pricing</a></li>
+          <li><a class="nav-item" href="#team">team</a></li>
+          <li><a class="nav-item" href="#blog">blog</a></li>
+          <li><a class="nav-item" href="#contact">contact</a></li>
+        </ul>
+      </nav>
+      <div class="menu">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
       </div>
     </header>
     <!-- end of header (topnav) -->
@@ -188,9 +193,9 @@
           </div>
           <!-- Indicators -->
           <div class="dots">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+            <span class="dot" data-index="3"></span>
           </div>
         </div>
       </section>
@@ -465,6 +470,48 @@
             <div class="flex-item">
               <video height="auto">
                 <source src="assets/videos/video5.mp4" />
+              </video>
+              <button id="video-play-btn">►</button>
+            </div>
+            <div class="flex-item">
+              <video height="auto">
+                <source src="assets/videos/video6.mov" />
+              </video>
+              <button id="video-play-btn">►</button>
+            </div>
+            <div class="flex-item">
+              <video height="auto">
+                <source src="assets/videos/video7.mp4" />
+              </video>
+              <button id="video-play-btn">►</button>
+            </div>
+            <div class="flex-item">
+              <video height="auto">
+                <source src="assets/videos/video8.mov" />
+              </video>
+              <button id="video-play-btn">►</button>
+            </div>
+            <div class="flex-item">
+              <video height="auto">
+                <source src="assets/videos/video9.mp4" />
+              </video>
+              <button id="video-play-btn">►</button>
+            </div>
+            <div class="flex-item">
+              <video height="auto">
+                <source src="assets/videos/video10.mp4" />
+              </video>
+              <button id="video-play-btn">►</button>
+            </div>
+            <div class="flex-item">
+              <video height="auto">
+                <source src="assets/videos/video11.mp4" />
+              </video>
+              <button id="video-play-btn">►</button>
+            </div>
+            <div class="flex-item">
+              <video height="auto">
+                <source src="assets/videos/video12.mp4" />
               </video>
               <button id="video-play-btn">►</button>
             </div>
