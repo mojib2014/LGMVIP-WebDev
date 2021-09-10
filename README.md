@@ -21,4 +21,4 @@ Zippy is a static web design built as a project for internship at LETSGROWMORE b
 Currently the google map does not show, I even give the google map `div` a height of 100% but still doesn't show, and some other issues.
 Improve the CSS and... later.
 
-![Zippy demo](assets/videos/zippy-demo-video.mp4)
+<iframe src="https://drive.google.com/file/d/14SbtP9-e2Gdvybovvc_157DiMsjVvkGP/preview" width="640" height="480"></iframe>
