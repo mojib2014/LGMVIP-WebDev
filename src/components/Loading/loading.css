@@ -1,0 +1,11 @@
+.loading {
+  justify-content: center;
+  width: 100%;
+}
+
+.loading img {
+  display: block;
+  width: 20%;
+  height: auto;
+  object-fit: cover;
+}

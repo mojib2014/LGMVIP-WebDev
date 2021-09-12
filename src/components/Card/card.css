@@ -1,0 +1,34 @@
+.card {
+  background-color: #ddd;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px rgba(200, 200, 200, 0.4);
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  border-radius: 5px;
+}
+
+.card h2 {
+  padding-bottom: 0.5rem;
+}
+
+.card-body {
+  background-color: #f8f8f8;
+  padding: 1.5rem 0.5rem 0 0.5rem;
+}
+
+.card-socials {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 1.5rem;
+}
+
+.card-socials a {
+  color: var(--text-color);
+  margin-right: auto;
+}

@@ -1,0 +1,10 @@
+.pagination {
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.pagination button {
+  margin-right: 2rem;
+}
